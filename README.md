@@ -1,101 +1,98 @@
-#ARTIFICIAL BRILLIANCE MODEL
+# 🧠 ARTIFICIAL BRILLIANCE MODEL
 
+> 🎮 **Deep Reinforcement Learning for Boss Fights in Dark Souls III**
 
-🎮 Deep Reinforcement Learning for Boss Fights in Dark Souls III
+This project explores the use of Deep Reinforcement Learning (RL) to train an intelligent agent capable of surviving and defeating bosses in **Dark Souls III**, leveraging **real-time memory manipulation** via Cheat Engine.
 
-This project explores the application of Reinforcement Learning (RL) to real-time gameplay by training an agent to survive and win boss fights in Dark Souls III using live game memory manipulation via Cheat Engine.
-
-The training environment is built using Gymnasium, with models trained using Stable-Baselines3 (PPO) and PyTorch. Real-time data is extracted from the game through a Cheat Engine table, enabling observations and actions directly tied to gameplay.
-
----
-
-🧠 Project Overview
-
-Core Features:
-- Custom Gym-compatible environment wrapping real-time game state via Cheat Engine
-- RL agent receives memory-based observations: player HP, stamina, position, etc.
-- Actions (e.g., dodge, attack) are injected into game memory
-- Reward system shaped around combat effectiveness (damage dealt, survival, avoiding hits)
-- Uses Proximal Policy Optimization (PPO) for training
+Using **Gymnasium** as the RL environment, combined with **Stable-Baselines3 (PPO)** and **PyTorch**, the model interacts with the live game by reading and injecting data directly into memory — making gameplay fully agent-controllable.
 
 ---
 
-🛠️ Directory Structure
+## 🔍 Project Highlights
 
+- 🔁 **Custom Gym-Compatible Environment** built on real-time game memory via Cheat Engine.
+- 📊 **Memory-based Observations**: HP, stamina, position, and more extracted live.
+- 🎮 **Action Injection**: Agent performs moves (attack, dodge, roll) by writing into game memory.
+- 🎯 **Reward System**: Optimized for survival, damage dealt, and effective dodging.
+- 🤖 **Training via PPO**: Proximal Policy Optimization from Stable-Baselines3.
+
+---
+
+## 📁 Directory Structure
+
+```
 FP-Machine-Learning-main/
 │
-├── Code/                     # Lua and Python scripts for in-game control
-│   ├── control_ds3_ml.py     # ML-specific agent/game interfacing
-│   ├── game_manager.py       # Game orchestration and control logic
-│   ├── coordinate_converter.py  # Mapping coordinates from memory to grid
-│   └── *.lua                 # Cheat Engine automation scripts
+├── Code/                        # Lua and Python scripts for control
+│   ├── control_ds3_ml.py        # ML agent <-> game interface
+│   ├── game_manager.py          # Orchestrates game logic
+│   ├── coordinate_converter.py  # Maps memory to coordinates
+│   └── *.lua                    # Cheat Engine automation scripts
 │
-├── dark_souls_api_bk_1.py    # Game API used for training prep
-├── gym_wrapper_bk_1.py       # Custom Gym wrapper for the DS3 environment
-├── train_bk_1.py             # Main training script using PPO
-├── train_test.py             # Testing and evaluation script
-├── DS3_Table_V1.CT           # Cheat Engine table with memory pointers
-├── Mem_Adresses.txt          # Notes on used memory addresses
-└── requirements.txt          # Python dependencies
+├── dark_souls_api_bk_1.py       # Game API for training setup
+├── gym_wrapper_bk_1.py          # Custom Gym wrapper for DS3
+├── train_bk_1.py                # PPO training script
+├── train_test.py                # Evaluation/test script
+├── DS3_Table_V1.CT              # Cheat Engine memory pointer table
+├── Mem_Adresses.txt             # Notes on memory offsets
+└── requirements.txt             # Python dependencies
+```
 
 ---
 
-🚀 How It Works
+## 🚀 How It Works
 
-1. Launch Dark Souls III with the provided .CT table loaded in Cheat Engine.
-2. Run the training script to initialize the Gym environment.
+1. Start **Dark Souls III** with the Cheat Engine `.CT` table loaded.
+2. Launch `train_bk_1.py` to initialize training.
 3. The agent:
-   - Reads real-time game data
-   - Chooses an action (attack/dodge/move)
-   - Injects the action back into the game
-   - Receives reward signals and updates policy accordingly
+   - 🔍 Observes the game state from memory.
+   - 🧠 Chooses an action (e.g., dodge, attack).
+   - ✍️ Injects it into the game memory.
+   - 🎁 Receives reward based on performance and adjusts behavior.
 
 ---
 
-🧪 Training Info
+## 🧪 Training Details
 
-- Model: PPO (Proximal Policy Optimization)
-- Frameworks: PyTorch, Stable-Baselines3, Gymnasium
-- GPU Support: Yes (tested with NVIDIA RTX 3080)
-- Reward Shaping:
-  - + for damage dealt
-  - - for being hit or dying
-- Key Hyperparameters:
-  - Learning rate: 2e-4
-  - Entropy coefficient: encourages exploration
-  - Episode length: matches boss fight duration
+| Item              | Description                           |
+|-------------------|---------------------------------------|
+| **Model**         | PPO (Proximal Policy Optimization)    |
+| **Frameworks**    | PyTorch, Stable-Baselines3, Gymnasium |
+| **GPU Support**   | ✅ Tested on NVIDIA RTX 3080           |
+| **Reward Shaping**| + Damage dealt, - Getting hit/dying   |
+| **Key Hyperparams**| LR: `2e-4`, Entropy Coef: `0.01`     |
 
 ---
 
-📦 Requirements
+## 📦 Requirements
 
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
 
 You'll also need:
-- A Steam version of Dark Souls III
-- Cheat Engine 7.5 or later
-- Enable script execution in Cheat Engine
+
+- ✅ Steam version of **Dark Souls III**
+- ✅ **Cheat Engine 7.5+**
+- ✅ Enable script execution in Cheat Engine settings
 
 ---
 
-📂 Project Link
+## 📈 Results
 
-Explore the full code and implementation here:
-👉 https://github.com/Shadrackkumi07/Final-Project-Model-Training
+After training:
 
----
-
-📈 Results
-
-After multiple training runs, agents learned:
-- Timing for dodging attacks
-- Maintaining distance and stamina
-- Dealing consistent damage and improving survivability
-
-Reward curves and episode lengths show meaningful improvement across epochs.
+- 🕹️ Agent learned dodge timing, spacing, and stamina management
+- ⚔️ Performance improved steadily across episodes
+- 📉 Reward graphs show consistent learning and adaptation
 
 ---
 
-📬 Contact
+## 🔗 Project Link
 
-Feel free to reach out if you're interested in AI + gaming, reinforcement learning, or memory hacking for intelligent agents.
+Check out the full project here:  
+👉 [**GitHub Repo**](https://github.com/Shadrackkumi07/Final-Project-Model-Training)
+
+---
