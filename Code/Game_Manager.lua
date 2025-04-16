@@ -2,7 +2,7 @@
 {$lua}
 
 -- Log file path (adjust as needed)
-local file_path = "C:\\Users\\Laween\\OneDrive\\Desktop\\MSUM\\Spring_2025\\490\\Final_Project\\Dark_Souls\\FP-Machine-Learning\\Code\\data\\run_log.txt"
+local file_path = "C:\\Users\\Shadrack\\OneDrive\\Desktop\\MSUM\\Spring_2025\\490\\Final_Project\\Dark_Souls\\FP-Machine-Learning\\Code\\data\\run_log.txt"
 
 -- Pointer strings (adjust these for your DS3 version)
 local PLAYER_HEALTH_PTR_STR = "[[[[WorldChrMan]+80]+1F90]+18]+D8"

@@ -5,10 +5,10 @@ import triggers
 
 
 # Paths to the logger output files
-PLAYER_INFO_PATH = "C:\\Users\\Laween\\OneDrive\\Desktop\\MSUM\\Spring_2025\\490\\Final_Project\\Dark_Souls\\FP-Machine-Learning\\Code\\data\\player_info.txt"
-GUNDYR_INFO_PATH = "C:\\Users\\Laween\\OneDrive\\Desktop\\MSUM\\Spring_2025\\490\\Final_Project\\Dark_Souls\\FP-Machine-Learning\\Code\\data\\gundyr_info.txt"
+PLAYER_INFO_PATH = "C:\\Users\\Shadrack\\OneDrive\\Desktop\\MSUM\\Spring_2025\\490\\Final_Project\\Dark_Souls\\FP-Machine-Learning\\Code\\data\\player_info.txt"
+GUNDYR_INFO_PATH = "C:\\Users\\Shadrack\\OneDrive\\Desktop\\MSUM\\Spring_2025\\490\\Final_Project\\Dark_Souls\\FP-Machine-Learning\\Code\\data\\gundyr_info.txt"
 # Path to the action trigger file
-ACTION_TRIGGER_PATH = "C:\\Users\\Laween\\OneDrive\\Desktop\\MSUM\\Spring_2025\\490\\Final_Project\\Dark_Souls\\FP-Machine-Learning\\Code\\data\\action_trigger.txt"
+ACTION_TRIGGER_PATH = "C:\\Users\\Shadrack\\OneDrive\\Desktop\\MSUM\\Spring_2025\\490\\Final_Project\\Dark_Souls\\FP-Machine-Learning\\Code\\data\\action_trigger.txt"
 
 action_dict = {
     0: "light attack",

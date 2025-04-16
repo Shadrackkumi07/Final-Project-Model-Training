@@ -1,6 +1,6 @@
 [ENABLE]
 {$lua}
-local file_path = "C:\\Users\\Laween\\OneDrive\\Desktop\\MSUM\\Spring_2025\\490\\Final_Project\\Dark_Souls\\FP-Machine-Learning\\Code\\data\\action_trigger.txt"
+local file_path = "C:\\Users\\Shadrack\\OneDrive\\Desktop\\MSUM\\Spring_2025\\490\\Final_Project\\Dark_Souls\\FP-Machine-Learning\\Code\\data\\action_trigger.txt"
 local VK_W = 0x57  -- W key for movement
 local VK_LBUTTON = 0x01  -- Left mouse button
 local VK_SPACE = 0x20  -- Space for dodge

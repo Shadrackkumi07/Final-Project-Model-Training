@@ -3,7 +3,7 @@
 
 
 --  Load the main table 
-loadTable("C:\\Users\\Laween\\OneDrive\\Desktop\\MSUM\\Spring_2025\\490\\Final_Project\\Dark_Souls\\FP-Machine-Learning\\DS3_Table_V1.CT")
+loadTable("C:\\Users\\Shadrack\\OneDrive\\Desktop\\MSUM\\Spring_2025\\490\\Final_Project\\Dark_Souls\\FP-Machine-Learning\\DS3_Table_V1.CT")
 
 
 -------------------------------------

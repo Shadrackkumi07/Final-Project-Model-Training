@@ -3,10 +3,7 @@ import time
 
 
 def log_player_info(isRunning):
-    # file_path = "C:\\Users\\thanos\\OneDrive - MNSCU\\Desktop\\school\\dark_souls_ai_code\\FP-Machine-Learning\\Code\\player_info.txt"  # Ben's path
-    # file_path = "/mnt/c/Users/Laween/OneDrive/Desktop/MSUM/Spring_2025/490/Final_Project/Dark_Souls/FP-Machine-Learning/Code/data/player_info.txt" # Laween's path
-    # file_path = "C:\\Users\\Laween\\OneDrive\\Desktop\\MSUM\\Spring_2025\\490\\Final_Project\\Dark_Souls\\FP-Machine-Learning\\Code\\data\\player_info.txt"  # Laween's path
-    # file_path = "data\\player_info.txt"  # Laween's path
+    # file_path = "C:\\Users\\Shadrack\\OneDrive - MNSCU\\Desktop\\school\\dark_souls_ai_code\\FP-Machine-Learning\\Code\\player_info.txt" 
     base_dir = os.path.dirname(os.path.abspath(__file__))
     file_path = os.path.join(base_dir, "data", "player_info.txt")
     print("Listening for game data...")
@@ -27,10 +24,6 @@ def log_player_info(isRunning):
 
 
 def log_gundyr_info(isRunning):
-    # file_path = "C:\\Users\\thanos\\OneDrive - MNSCU\\Desktop\\school\\dark_souls_ai_code\\FP-Machine-Learning\\Code\\gundyr_info.txt"  # Ben's path
-    # file_path = "/mnt/c/Users/Laween/OneDrive/Desktop/MSUM/Spring_2025/490/Final_Project/Dark_Souls/FP-Machine-Learning/Code/data/gundyr_info.txt" # Laween's path
-    # file_path = "C:\\Users\\Laween\\OneDrive\\Desktop\\MSUM\\Spring_2025\\490\\Final_Project\\Dark_Souls\\FP-Machine-Learning\\Code\\data\\gundyr_info.txt"  # Laween's path
-    # file_path = "data\\gundyr_info.txt"  # Laween's path
     base_dir = os.path.dirname(os.path.abspath(__file__))
     file_path = os.path.join(base_dir, "data", "gundyr_info.txt")
 

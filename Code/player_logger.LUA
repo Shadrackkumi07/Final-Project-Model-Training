@@ -1,7 +1,7 @@
 [ENABLE]
 {$lua}
 
-local file_path = "C:\\Users\\Laween\\OneDrive\\Desktop\\MSUM\\Spring_2025\\490\\Final_Project\\Dark_Souls\\FP-Machine-Learning\\Code\\data\\player_info.txt"
+local file_path = "C:\\Users\\Shadrack\\OneDrive\\Desktop\\MSUM\\Spring_2025\\490\\Final_Project\\Dark_Souls\\FP-Machine-Learning\\Code\\data\\player_info.txt"
 
 function updateValues()
     local CURRENT_X_PTR = "[[[WorldChrMan]+40]+28]+80"
